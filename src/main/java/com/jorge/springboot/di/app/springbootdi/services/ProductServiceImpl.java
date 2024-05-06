@@ -1,15 +1,13 @@
 package com.jorge.springboot.di.app.springbootdi.services;
 
 import java.util.List;
-import java.util.Map;
 import java.util.stream.Collectors;
 
-import org.springframework.beans.factory.annotation.Value;
+// import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
 import org.springframework.web.context.annotation.RequestScope;
 
-import com.jorge.springboot.di.app.springbootdi.AddConfig;
 import com.jorge.springboot.di.app.springbootdi.controllers.Product;
 import com.jorge.springboot.di.app.springbootdi.repositories.ProductRepository;
 
@@ -22,6 +20,11 @@ public class ProductServiceImpl implements ProductService {
 
   // @Value("${config.price.tax}")
   // private Double tax;
+
+  // public ProductServiceImpl(@Qualifier("productRepositoryJson") ProductRepository repository, Environment environment) {
+  //   this.environment = environment;
+  //   this.repository = repository;
+  // }
 
   public ProductServiceImpl(ProductRepository repository, Environment environment) {
     this.environment = environment;

@@ -1,0 +1,22 @@
+[
+  {
+      "id": 1,
+      "name": "Playstation 5",
+      "price": 975
+  },
+  {
+      "id": 2,
+      "name": "Horno para pizza",
+      "price": 300
+  },
+  {
+      "id": 3,
+      "name": "Zapatillas Puma",
+      "price": 225
+  },
+  {
+      "id": 4,
+      "name": "Pantalon Dockers",
+      "price": 200
+  }
+]
