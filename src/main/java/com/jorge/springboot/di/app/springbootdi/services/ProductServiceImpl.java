@@ -4,11 +4,13 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
+import org.springframework.web.context.annotation.RequestScope;
 
 import com.jorge.springboot.di.app.springbootdi.controllers.Product;
 import com.jorge.springboot.di.app.springbootdi.repositories.ProductRepository;
 
 @Service
+@RequestScope
 public class ProductServiceImpl implements ProductService {
 
   private ProductRepository repository;
